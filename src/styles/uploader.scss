@@ -1,0 +1,116 @@
+.uploader-wrapper{
+    width:100%;
+    overflow: hidden;
+    .uploader-title{
+        color: #333;
+        font-size: 28px;
+        line-height: 90px;
+        display: inline-block;
+    }
+    .uploader-list{
+        width:100%;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding-top: 15px;
+    }
+    .uploader-card{
+        width: 48% !important;
+        margin-bottom: 10px;
+        float: left;
+        &:nth-child(odd){
+            padding-right: 20px;
+        }
+    }
+
+    .uploader-img{
+        width: 100%;
+        height: 205px;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+    .img-card{
+        background-color: #fff;
+        //border: 1px solid #eee;
+        border-radius: 6px;
+        width: 100%;
+        height: 205px;
+        // line-height: 205px;
+        text-align: center;
+        position: relative;
+    }
+    .img-desc{
+        margin-top: 18px;
+        text-align:center;
+        display: block;
+        font-size: 25px;
+        color: #999;
+    }
+    .img-add{
+        background: #fff url(../../images/icon-add-blue.png) center no-repeat;
+        background-size: 60px;
+        background-position-y: 70px;
+    }
+    .desc-error{
+        color: #fe4844;
+    }
+    .img-idfront{
+        background: #fff url(../../images/idcardfront.png) center no-repeat;
+    }
+    .img-idback{
+        background: #fff url(../../images/idcardback.png) center no-repeat;
+    }
+    .img-drifront{
+        background: #fff url(../../images/drivfront.png) center no-repeat;
+    }
+    .img-driback{
+        background: #fff url(../../images/drivback.png) center no-repeat;
+    }
+    .img-remove{
+        position: absolute;
+        right: -0px;
+        top: -14px;
+        //容器宽高要比背景图大，否则在iphone上会出现背景被遮挡。
+        width: 30px;
+        height: 30px;
+        background: url(../../images/icon-del-corner.png) center no-repeat;
+        background-size: 100% auto;
+        z-index: 11;
+    }
+    .img-fail{
+        background: #f9f9f9 url(../../images/upload-fail.png) center no-repeat;
+        background-size: 60px 50px;
+        background-position-y: 56px;
+        border-color: #fe4844;
+    }
+    .uploader-mask{
+        background: rgba(0,0,0,.7);
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        border-radius: 6px;
+        position: absolute;
+    }
+    .loading-snake {
+        background: url(../../images/loading-snake.png) center no-repeat;
+        animation: spinner-rotate 0.8s infinite linear;
+        width: 60px;
+        height: 60px;
+        background-size: 100% auto;
+        position: absolute;
+        top: 70px;
+        left: 130px;
+    }
+
+    @keyframes spinner-rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+    }
+}

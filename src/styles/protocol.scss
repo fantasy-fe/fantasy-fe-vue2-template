@@ -1,0 +1,71 @@
+.authorization {
+    background: #fff;
+    margin: 0 auto;
+    font-size: 32px;
+    color: #343434;
+    padding: 10px 30px 140px 30px;
+    text-align: justify;
+    &.nopadding {
+        padding-top: 0;
+    }
+    h1 {
+        font-size: 42px;
+        text-align: center;
+        margin: 1rem 0 0.83rem 0;
+    }
+    h4 {
+        text-align:center;
+        margin:50px 0px 50px 0px;
+    }
+    p {
+        text-indent: 56px;
+        line-height: 56px;
+        margin-top: 10px;
+    }
+    .bold {
+        font-weight: bold;
+        color: #000;
+    }
+    .left{
+        text-align: left;
+    }
+    .userinfo {
+        padding: 0px 10px ;
+        border-bottom:  1px solid #000;
+        word-break: break-all;
+    }
+}
+.read-protocol {
+    line-height: 90px;
+    padding-left: 30px;
+    font-size: .86em;
+    .check-box {
+      position: relative;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      border: 2px solid #ee2a46;
+      border-radius: 4px;
+      vertical-align: middle;
+      &.checked {
+      &::before {
+          content: '';
+          position: absolute;
+          width: 17px;
+          height: 7px;
+          top: 4px;
+          left: 3px;
+          border-left: 2px solid #ee2a46;
+          border-bottom: 2px solid #ee2a46;
+          transform: rotate(-45deg);
+      }
+    }
+  }
+  .decs {
+    color: #666;
+    vertical-align: middle;
+  }
+  .protocol {
+    color: #4A90E2;
+  }
+}
